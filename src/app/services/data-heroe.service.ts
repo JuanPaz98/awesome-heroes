@@ -26,8 +26,8 @@ export class DataHeroeService {
         this.heroes[indexToUpdate] = data
         this.heroeData = data;
       }
-      console.log(this.heroes)
     })    
   }
+  
   
 }

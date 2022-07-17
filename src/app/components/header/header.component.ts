@@ -8,10 +8,9 @@ import { DataHeroeService } from '../../services/data-heroe.service'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
   constructor(public dataHeroe: DataHeroeService) { }
-
+  
   ngOnInit(): void {
   }
-
+  
 }

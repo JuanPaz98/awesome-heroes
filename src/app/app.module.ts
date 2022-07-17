@@ -9,7 +9,8 @@ import { ListOfHeroesComponent } from './components/list-of-heroes/list-of-heroe
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroeDetailComponent } from './components/heroe-detail/heroe-detail.component';
 import { HeroeCardComponent } from './components/heroe-card/heroe-card.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { PercentageComponent } from './components/percentage/percentage.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http'
     ListOfHeroesComponent,
     FooterComponent,
     HeroeDetailComponent,
-    HeroeCardComponent
+    HeroeCardComponent,
+    PercentageComponent
   ],
   imports: [
     BrowserModule,

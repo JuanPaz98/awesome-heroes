@@ -1,8 +1,11 @@
 <div class="card">
     <div class="card-content" >
-        <h3>{{heroeCard.name}}</h3>
-        <p>{{heroeCard.description}}</p>
-        <img src="{{heroeCard.image}}" width="100%"alt="">
-        <button>Ver detalle</button>
+        <img src="{{heroeCard.image}}" alt="">
+        <div class="description">
+            <h3>{{heroeCard.name}}</h3>
+            <p>{{heroeCard.description}}</p>
+            <button>Ver detalle</button>
+        </div>
+        <progress max="{{heroeCard.likes + heroeCard.dislikes}}" value="{{heroeCard.likes}}" ></progress>
     </div>
 </div> 

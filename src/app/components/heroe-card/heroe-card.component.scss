@@ -1,7 +1,49 @@
 .card{
-    width: 450px;
-    height: 500px;
-    border: 2px solid black;
-/*     background-image: url(../../../assets/img/superman.jpg); */
-    /* background-size: 150% 100%; */
+    width: 35em;
+    height: 37em;
+    overflow: hidden;
+    position:relative;
+    background: linear-gradient(transparent, black);
+    margin-bottom: 30px;
+}
+.card-content{
+    img{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 150%;
+        height: 100%;
+        z-index: -1;
+    }
+    .description{
+        position: absolute;
+        width: 80%;
+        bottom: 60px;
+        left: 40px;
+        h3{
+            color: #fff;
+            font-size: 34px;
+        }
+        p{
+            color: #fff;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            background-color: transparent;
+            font-weight: bold;
+            color: #fff;
+            border: 1px solid #fff;
+            margin-top: 15px;
+        }
+    }
+    progress{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        border-radius: 0;
+    }
+    progress::-webkit-progress-bar{ background-color: rgba(240, 156, 0, .6)};
+    progress::-webkit-progress-value{background-color: rgba(0, 182, 164, .6);}
 }

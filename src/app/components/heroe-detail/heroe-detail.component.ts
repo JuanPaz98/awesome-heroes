@@ -10,6 +10,8 @@ import { DataHeroeService } from '../../services/data-heroe.service'
 })
 export class HeroeDetailComponent implements OnInit {
 
+  vote = false;
+
   constructor( public DataHeroeService: DataHeroeService) { }
 
   ngOnInit(): void {
@@ -18,12 +20,15 @@ export class HeroeDetailComponent implements OnInit {
 
   onLike(){
     this.DataHeroeService.heroeData.likes +=1;
-    console.log(this.DataHeroeService)
     this.DataHeroeService.onUpdateHeroe()
+    this.vote = true
   }
   onDislike(){
     this.DataHeroeService.heroeData.dislikes +=1;
-    console.log(this.DataHeroeService)
     this.DataHeroeService.onUpdateHeroe()
+    this.vote = true
+  }
+  onGoback(){
+    this.vote = false
   }
 }

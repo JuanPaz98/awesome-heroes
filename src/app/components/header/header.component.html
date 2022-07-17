@@ -2,4 +2,5 @@
     <img src="{{dataHeroe.heroeData.image}}" alt="principal-image">
     <app-navbar></app-navbar>
     <app-heroe-detail></app-heroe-detail>
+    <progress max="{{dataHeroe.heroeData.likes + dataHeroe.heroeData.dislikes}}" value="{{dataHeroe.heroeData.likes}}" ></progress>
 </div>

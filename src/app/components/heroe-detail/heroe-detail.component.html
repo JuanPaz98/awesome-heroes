@@ -1,15 +1,24 @@
 <div class="card__heroe">
-    <div class="card__heroe-contain">
+    <div class="card__heroe-contain" *ngIf="vote === false; else votado">
         <span>Dinos tu opinión sobre</span>
         <h2>{{DataHeroeService.heroeData.name}}?</h2>
         <p>{{DataHeroeService.heroeData.description}}</p>
+        <br>
         <a href="#">Más información</a>
-        <p>likes {{DataHeroeService.heroeData.likes}}</p>
-            <p>Dislikes {{DataHeroeService.heroeData.dislikes}}</p>
-        <p class="decition">¿Cuál es tu Voto?</p>
+        <h3 class="decition">¿Cuál es tu Voto?</h3>
+        
     </div>
-    <div class="card__heroe-buttons">
-        <button (click)="onLike()" class="btn btn-like" >Like</button>
-        <button (click)="onDislike()" class="btn btn-dislike">Dislike</button>
+    <ng-template #votado >
+        <div class="card__heroe-contain">
+            <h2>Marvel - {{DataHeroeService.heroeData.name}}</h2>
+            <h2>Tu voto ha sido registrado!</h2>
+            <p>{{DataHeroeService.heroeData.description}}</p>
+            <button (click)="onGoback()" class="back-button"> << Volver a votar </button>
+        </div>
+    </ng-template>
+    <div [ngClass]="{'card__heroe-buttons': vote == false, 'disabled': vote}" >
+        <button (click)="onLike()" class="btn btn-like" ><img src="../../../assets/icons/like.png" width="25px"></button>
+        <button (click)="onDislike()" class="btn btn-dislike"><img src="../../../assets/icons/dislike.png" width="25px"></button>
     </div>
+    
 </div>

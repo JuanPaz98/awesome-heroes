@@ -1,0 +1,32 @@
+.footer{
+    margin-top: 1em;
+    padding: 10px 6em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.first-list {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    li{
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.second-list {
+    width: 15%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    li{
+        a{
+            text-decoration: none;
+        }
+    }
+    .img-media{
+        width: 20px;
+    }
+}

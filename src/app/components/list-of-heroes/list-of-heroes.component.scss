@@ -1,3 +1,16 @@
+
 .heroes-container{
-    padding: 10px 50px;
+    padding: 1em 6em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .subtitle{
+        width: 100%;   
+        margin: 20px 0;
+    }
+}
+hr{
+    width: 85%;
+    margin: 0 auto;
 }
