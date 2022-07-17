@@ -1,27 +1,28 @@
-# AwesomeHeroes
+##Awesome Heroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+Requerimientos para que la aplicación funcione correctamente:
 
-## Development server
+- Correr el comando "ng serve" para inicializar angular, el cual se ejecutará en la ruta http://localhost:4200/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- el backend está simulado a través de Json server y se encuentra en formato Json, funcionando como API Rest. El script para ejecutarlo es "npm serverAPI" y se ejecutará en http://localhost:3000/.
 
-## Code scaffolding
+###Características de la Aplicación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Aplicación para la votación de tus superheroes favoritos!!
 
-## Build
+La aplicación se encuentra desarrollada enteramente en angular y las habilidades que se aplicaron fueron las siguientes:
+- Creación de componentes
+- Comunicación entre componentes a traves del Decorador Input y servicios
+- Creación de API con Json-server
+- Implementación del módulo HttpClient para el consumo de la API donde se encontraban los datos en formato Json
+- Persistencia de información (votos) a través de los Update a la API
+- Creacion de Interface para tipar y recibir correctamente la información de la API 
+- Inyeccion de dependencias para consumo de servicios desde los diferentes componentes
+- Maquetación totalmente en scss con manejo de sus propiedades de posición y manejo de flexbox y grid
+- Creación de barra de votación dinámica, la cual se actualiza con base en el número de votos del superheroe.
+- Implementación de directivas como ngIf y ngFor para la renderización condicional de los elementos o componentes
+- Control de versiones con git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+####Pendientes
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Generar los media-queries para hacerlo responsive y adaptarlo a los diferentes dispositivos(móvil, tablet), por falta de tiempo. 
