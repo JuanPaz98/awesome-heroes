@@ -45,8 +45,14 @@
     .btn-like{
         background-color: #00b6a4;
     }
+    .btn-like:hover{
+        background-color: #00463f
+    }
     .btn-dislike{
         background-color: #f09c00;
+    }
+    .btn-dislike:hover{
+        background-color: #b57600
     }
 }
 .disabled{

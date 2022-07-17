@@ -10,7 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeroeDetailComponent } from './components/heroe-detail/heroe-detail.component';
 import { HeroeCardComponent } from './components/heroe-card/heroe-card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PercentageComponent } from './components/percentage/percentage.component'
+
 
 @NgModule({
   declarations: [
@@ -21,7 +21,6 @@ import { PercentageComponent } from './components/percentage/percentage.componen
     FooterComponent,
     HeroeDetailComponent,
     HeroeCardComponent,
-    PercentageComponent
   ],
   imports: [
     BrowserModule,
