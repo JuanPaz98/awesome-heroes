@@ -1,0 +1,13 @@
+<div class="card-heroe">
+    <span>Dinos tu opinión sobre</span>
+    <h2>{{DataHeroeService.heroeData.name}}?</h2>
+    <p>{{DataHeroeService.heroeData.description}}</p>
+    <a href="#">Más información</a>
+    <p>¿Cuál es tu Voto?</p>
+    <p>likes {{DataHeroeService.heroeData.likes}}</p>
+    <p>Dislikes {{DataHeroeService.heroeData.dislikes}}</p>
+    <div>
+        <button (click)="onLike()" >Like</button>
+        <button (click)="onDislike()" >Dislike</button>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Ironman",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aperiam iure sed libero adipisci quaerat similique iusto assumenda voluptatem minus est ducimus esse ullam harum voluptates, obcaecati, excepturi inventore voluptatum.",
+      "likes": 14,
+      "dislikes": 24
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "description": "lorem Ipsum dolor sit amet, consectetur adipiscing elit",
+      "likes": 10,
+      "dislikes": 5
+    },
+    {
+      "id": 3,
+      "name": "Thor",
+      "description": "lorem Ipsum dolor sit amet, consectetur adipiscing elit",
+      "likes": 4,
+      "dislikes": 11
+    },
+    {
+      "id": 4,
+      "name": "Batman",
+      "description": "lorem Ipsum dolor sit amet, consectetur adipiscing elit ",
+      "likes": 2,
+      "dislikes": 2
+    },
+    {
+      "id": 5,
+      "name": "Spiderman",
+      "description": "lorem Ipsum dolor sit amet, consectetur adipiscing elit",
+      "likes": 11,
+      "dislikes": 4
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.navbar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        
+    }
+}
+.navbar__icon{
+    width: 200px;
+}
