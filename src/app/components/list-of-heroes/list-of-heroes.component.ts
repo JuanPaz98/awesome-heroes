@@ -24,26 +24,5 @@ export class ListOfHeroesComponent implements OnInit {
       console.log('heroes array', this.heroes)
     })
   }
- /*  onUpdateHeroe(){
-    this.ApiSvc.updateHeroe(this.newUpdate.heroeData).subscribe(data => {
-      const indexToUpdate = data ? this.heroes.findIndex(h => h.id == data.id): -1;
-      if(indexToUpdate > -1) {
-        this.heroes[indexToUpdate] = data
-        this.newUpdate.heroeData = data;
-      }
-      console.log(this.heroes)
-    })    
-  }
-
-  onLike(){
-    this.newUpdate.heroeData.likes +=1;
-    console.log(this.newUpdate)
-    this.onUpdateHeroe()
-  }
-  onDislike(){
-    this.newUpdate.heroeData.dislikes +=1;
-    console.log(this.newUpdate)
-    this.onUpdateHeroe()
-  } */
 
 }

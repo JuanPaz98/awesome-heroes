@@ -1,10 +1,7 @@
 <div class="heroes-container">
     <h2>Super Heroes Anteriores</h2>
     <div class="list-of-heroes" *ngFor="let hero of heroes">
-        <h2>{{hero.name}}</h2> 
-        <p>Likes =  {{hero.likes}}</p>
-        <p>Dislikes  =  {{hero.dislikes}}</p>
-        <!-- <app-heroe-card></app-heroe-card> -->
+        <app-heroe-card [heroeCard]="hero"></app-heroe-card>
     </div>
     
 </div>

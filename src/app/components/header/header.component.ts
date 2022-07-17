@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataHeroeService } from '../../services/data-heroe.service'
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataHeroe: DataHeroeService) { }
 
   ngOnInit(): void {
   }

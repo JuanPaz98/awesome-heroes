@@ -13,6 +13,7 @@ export class DataHeroeService {
     id: 1,
     name: "",
     description: "",
+    image: "",
     likes: 0,
     dislikes: 0
   }

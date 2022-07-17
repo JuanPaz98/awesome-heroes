@@ -1,6 +1,45 @@
-.card-heroe{
-    width: 500px;
-    height: 500px;
+.card__heroe{
+    position: relative;
+    width: 450px;
+    height: 450px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white ;
+    margin-left: 60px;
+}
+.card__heroe-contain{
+    position: absolute;
+    margin: 20px 60px 20px 20px;
+    height: 80%;
+    span{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .decition{
+        position: absolute;
+        bottom: 0;
+    }
+}
+.card__heroe-buttons{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    .btn{
+        border: none;
+        color: #fff;
+    }
+    .btn-like{
+        background-color: #00b6a4;
+    }
+    .btn-dislike{
+        background-color: #f09c00;
+    }
 }
